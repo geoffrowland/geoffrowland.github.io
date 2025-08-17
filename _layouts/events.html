@@ -5,29 +5,16 @@ layout: archive
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].forthcoming_events | default: "Forthcoming Events" }}</h3>
-
+{% assign events = site.posts | where_exp: 'post', 'post.categories contains "event" %}
 {% if paginator %}
-  {% assign posts = paginator.posts %}
+  {% assign events = paginator.events %}
 {% else %}
-  {% assign posts = site.posts %}
+  {% assign events = site.events %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% include documents-collection.html entries=posts type=entries_layout %}
 </div>
-
-    {% for post in site.posts %}
-      {% assign event_date = post.date | date: '%Y-%m-%d' %}
-      {% assign today = site.time | date: '%Y-%m-%d' %}
-      {% if event_date >= today %}
-        <div class="entries-{{ entries_layout }}">
-          {% include documents-collection.html entries=posts type=entries_layout %}
-          <h3>{{ post.title }}</h3>
-          <p>{{ post.date | date: "%B %d, %Y" }}</p>
-          {{ post.content }}
-        </div>
-      {% endif %}
-    {% endfor %}
 
 {% include paginator.html %}
