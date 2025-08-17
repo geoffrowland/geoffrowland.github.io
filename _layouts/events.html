@@ -17,4 +17,16 @@ layout: archive
   {% include documents-collection.html entries=posts type=entries_layout %}
 </div>
 
+    {% for post in site.posts %}
+      {% assign event_date = post.date | date: '%Y-%m-%d' %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% if event_date >= today %}
+        <div class="event">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.date | date: "%B %d, %Y" }}</p>
+          {{ post.content }}
+        </div>
+      {% endif %}
+    {% endfor %}
+
 {% include paginator.html %}
