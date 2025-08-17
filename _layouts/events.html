@@ -6,6 +6,8 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].forthcoming_events | default: "Forthcoming Events" }}</h3>
 
+{% assign future_events = site.posts | where_exp: 'post'and 'post.categories contains "event" %}
+
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
