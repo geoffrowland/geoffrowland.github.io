@@ -17,6 +17,7 @@ title: GR
 url: https://geoffrowland.github.io
 baseurl:
 repository: geoffrowland/geoffrowland.github.io
+locale: en-GB
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
