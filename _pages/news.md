@@ -1,5 +1,5 @@
 ---
 title: "News"
-layout: home
+layout: news
 permalink: /news/
 ---
