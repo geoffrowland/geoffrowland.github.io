@@ -1,5 +1,6 @@
 ---
 title: "Post: Standard"
+date: 2010-01-07
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
