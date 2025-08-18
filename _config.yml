@@ -62,7 +62,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  -jekyll-
 
 author:
   name   : "Geoffrey Rowland"
