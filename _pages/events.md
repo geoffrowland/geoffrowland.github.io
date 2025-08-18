@@ -2,7 +2,7 @@
 title: Events
 layout: category
 permalink: /events/
-taxonomy: Event
+taxonomy: event
 ---
 
 Sample post listing for the category `Edge Case`.
