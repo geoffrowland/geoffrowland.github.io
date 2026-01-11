@@ -37,7 +37,7 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "default", "n
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 0 # amount of posts to show
+paginate: 1 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -80,7 +80,7 @@ scholar:
 author:
   name   : "Geoffrey Rowland"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Geology of Ham Hill"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
